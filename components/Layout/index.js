@@ -3,6 +3,7 @@ import {useState} from 'react'
 import useMyLayout from '../../hooks/colors'
 import FadeIn from '../FadeIn'
 import ProgressBar from '../ProgressBar'
+import ProgressB2 from '../ProgressB2'
 
 const Layout = ({children}) => {
 
@@ -21,6 +22,7 @@ const Layout = ({children}) => {
       <main className={`${classes.main} ${scrollPos > 30 && classes.large}`} onScroll={onScroll}>
         <FadeIn><h1>aap</h1></FadeIn>
         <FadeIn><ProgressBar /></FadeIn>
+        <FadeIn><ProgressB2 /></FadeIn>
         <div>{children}</div>
         <footer className={classes.footer}>noot</footer>
       </main>
