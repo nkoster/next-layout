@@ -1,0 +1,55 @@
+.container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    /*background: #0070f3;*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+    background: white;
+    transition: ease-in .3s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header.collapsed {
+    top: 8px;
+    left: 7px;
+    height: 2rem;
+    width: 2rem;
+    min-width: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.collapsed::after {
+    content: 'Hi!';
+}
+
+.main {
+    position: fixed;
+    top: 3rem;
+    bottom: 0;
+    overflow: auto;
+    width: 100%;
+    transition: ease-in .3s;
+}
+
+.main.large {
+    top: .5rem
+}
+
+.footer {
+    position: relative;
+    height: 3rem;
+    bottom: 0;
+    width: 100%;
+    background: white;
+}

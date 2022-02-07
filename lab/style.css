@@ -1,0 +1,85 @@
+.main {
+    position: absolute;
+    width: 99%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+    overflow: hidden;
+    box-shadow: inset 0 0 1rem mediumslateblue;
+    /*border-top: 1px solid black;*/
+    border-radius: 1rem;
+}
+
+.slider {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    animation: loop 2s infinite linear;
+    white-space: nowrap;
+    /*background: mediumslateblue;*/
+    background: linear-gradient(to bottom, mediumslateblue, #0070f3);
+    opacity: 30%;
+}
+
+@keyframes loop {
+    to {
+        transform: translateX(-2rem);
+    }
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    min-width: 2rem;
+    min-height: 2rem;
+}
+
+.box-left {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    background: white;
+    min-width: 1rem;
+    min-height: 2rem;
+    clip-path: polygon(0 0,100% 0, 0 100%);
+}
+
+.box-right {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    display: inline-block;
+    background: white;
+    min-width: 1rem;
+    min-height: 2rem;
+    clip-path: polygon(100% 0,0 100%, 100% 100%);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to bottom, mediumslateblue, #0070f3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    opacity: 100%;
+    transition: opacity .15s ease-in;
+    user-select: none;
+}
