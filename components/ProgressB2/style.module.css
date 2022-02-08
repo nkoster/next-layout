@@ -18,7 +18,7 @@
     white-space: nowrap;
     background: black;
     /*background: linear-gradient(to bottom, mediumslateblue, #0070f3);*/
-    opacity: 30%;
+    opacity: 10%;
 }
 
 @keyframes loop {
@@ -62,22 +62,38 @@
     position: absolute;
     left: 0;
     top: 0;
-    min-width: 100%;
+    width: 0;
     min-height: 100%;
-    background: linear-gradient(to bottom, mediumslateblue, #0070f3);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     color: white;
-    opacity: 100%;
+    opacity: 60%;
     transition: .15s ease-in;
     user-select: none;
     /*mix-blend-mode: difference;*/
     font-size: 1rem;
     font-weight: bold;
+    border-radius: 2rem;
+    border: 2px solid black;
 }
 
 .overlay:hover {
     color: black;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /*mix-blend-mode: exclusion;*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 .5rem white;
 }

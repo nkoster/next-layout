@@ -1,6 +1,6 @@
 import classes from './style.module.css'
 
-const ProgressB2 = () => {
+const ProgressB2 = ({progress}) => {
   return (
     <div className={classes.container}>
       <div className={classes.slider}>
@@ -13,6 +13,8 @@ const ProgressB2 = () => {
           )
         })}
       </div>
+      <div className={classes.overlay} style={{width: progress + '%'}}> </div>
+      <div className={classes.progress} >{progress}%</div>
     </div>
   )
 }

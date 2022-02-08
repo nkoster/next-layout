@@ -1,6 +1,6 @@
 .container {
     opacity: 0%;
-    transition: ease-in .3s;
+    transition: ease-in .5s;
 }
 
 .container.show {
