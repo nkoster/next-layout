@@ -60,9 +60,9 @@
 
 .overlay {
     position: absolute;
-    left: 0;
+    left: -100%;
     top: 0;
-    width: 0;
+    width: 100%;
     min-height: 100%;
     background: black;
     display: flex;
@@ -73,15 +73,10 @@
     opacity: 60%;
     transition: .15s ease-in;
     user-select: none;
-    /*mix-blend-mode: difference;*/
     font-size: 1rem;
     font-weight: bold;
     border-radius: 2rem;
     border: 2px solid black;
-}
-
-.overlay:hover {
-    color: black;
 }
 
 .progress {
@@ -90,7 +85,6 @@
     top: 0;
     min-width: 100%;
     min-height: 100%;
-    /*mix-blend-mode: exclusion;*/
     color: white;
     display: flex;
     justify-content: center;

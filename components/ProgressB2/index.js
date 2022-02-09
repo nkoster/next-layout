@@ -13,7 +13,7 @@ const ProgressB2 = ({progress}) => {
           )
         })}
       </div>
-      <div className={classes.overlay} style={{width: progress + '%'}}> </div>
+      <div className={classes.overlay} style={{left: '-' + (100-progress) + '%'}}> </div>
       <div className={classes.progress} >{progress}%</div>
     </div>
   )
