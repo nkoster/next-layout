@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    position: relative;
+    scale: 0;
+    transition: .3s ease-in;
+}
+
+.end {
+    scale: 100%;
+}
