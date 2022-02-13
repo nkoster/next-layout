@@ -6,14 +6,12 @@ const Grow = ({children}) => {
   const [oneTime, setOneTime] = useState(false)
 
   useEffect(() => {
-    setOneTime(true)
+    setTimeout(() => setOneTime(true), 100)
   }, [])
 
   return (
-    <div className={classes.container}>
-      <div className={`${classes.start} ${oneTime && classes.end}`}>
+    <div className={`${classes.container} ${oneTime && classes.end}`}>
       {children}
-    </div>
     </div>
   )
 
